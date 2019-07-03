@@ -42,13 +42,7 @@ function showTodos() {
 
   */
 
-  for(var i = 0; i < todos.lenght; i++) {
-    <div>
-        <input type="checkbox" id="todo${i}" onChange="complete(this.id)" />
-        <span className="todo">todos[i]</span> 
-       
-      </div>
-  }
+  
   
   
   
@@ -58,7 +52,13 @@ function showTodos() {
     How can you tell how many todos there are?
     You can use "countElement.innerHTML = " to set the number of todos.
   */
-
+for(var i = 0; i < todos.lenght; i++) {
+    <div>
+        <input type="checkbox" id="todo${i}" onChange="complete(this.id)" />
+        <span className="todo">todos[i]</span> 
+       
+      </div>
+  }
   countElement.innerHTML = todos.lenght;
 }
 
@@ -110,3 +110,4 @@ function showCompleted() {
   */
   completedElement.innerHTML = complited.lenght;
 }
+
